@@ -17,8 +17,9 @@
 }
 
 body{
-    /* height: 100vh; */
-    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: var(--principal);
     color: var(--letras);
 }
@@ -40,7 +41,7 @@ body{
 
 .apresentacao{
     gap: 80px;
-    padding: 6% 15%;
+    padding: 6% 15% 2rem 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -115,13 +116,18 @@ body{
 }
 
 .rodape{
-    padding: 1.5rem; 
+    padding: 1rem; 
     color: var(tercearia);
     background-color: var(--secundaria);
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
+    bottom: 0;
+    flex-shrink: 0;
+    position: fixed;
+    width: 100%;
+    
 }
 
 @media (max-width: 1200px) {
@@ -136,11 +142,25 @@ body{
 
     .apresentacao{
         flex-direction: column-reverse;
-        padding:5%;
+        padding: 5% 5% 2rem 5%;
     }
     
     .apresentacao__conteudo{
         width: auto;
+    }
+
+    .rodape{
+        padding: 1rem; 
+        color: var(tercearia);
+        background-color: var(--secundaria);
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        bottom: 0;
+        flex-shrink: 0;
+        width: auto;
+        
     }
 
 }

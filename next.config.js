@@ -1,4 +1,4 @@
-module.exports = {
+const nextConfig  = {
     trailingSlash: true,
     async redirects() {
       return [
@@ -10,3 +10,4 @@ module.exports = {
       ]
     },
   }
+  module.exports = nextConfig;

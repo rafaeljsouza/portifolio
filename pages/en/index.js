@@ -16,25 +16,25 @@ export default function Home() {
 
             <header className={styles.cabecalho}>
                 <nav className={styles.cabecalho__menu}>
-                    <Link href="/pt" className={styles.cabecalho__menu__link}>Home</Link>
-                    <Link href="/pt/about" className={styles.cabecalho__menu__link}>Sobre mim</Link>
-                    <Link href="/pt/projects" className={styles.cabecalho__menu__link}>Projetos</Link>
+                <Link href="/en" className={styles.cabecalho__menu__link}>Home</Link>
+                <Link href="/en/about" className={styles.cabecalho__menu__link}>About me</Link>
+                <Link href="/en/projects" className={styles.cabecalho__menu__link}>Projects</Link>
                 </nav>
             </header>
 
             <main className={styles.apresentacao}>
                 <section className={styles.apresentacao__conteudo}>
                 <h1 className={styles.apresentacao__conteudo__titulo}>
-                    Encontre as melhores soluções <strong className={styles.titulo_destaque}>
-                    com Front-end de qualidade!
+                    Find the best solutions <strong className={styles.titulo_destaque}>
+                    with quality Front-end!
                     </strong>
                 </h1>
                 <p className={styles.apresentacao__conteudo__texto}>
-                    Olá! Sou Rafael Souza, desenvolvedor com especialidade em React, HTML e CSS.
+                 Hi! I'm Rafael Souza, a developer specialized in React, HTML and CSS.
                 </p>
 
                 <div className={styles.apresentacao__links}>
-                    <h2 className={styles.apresentacao__links__subtitulo}>Acesse minhas redes</h2>
+                    <h2 className={styles.apresentacao__links__subtitulo}>Access my networks</h2>
                     <a className={styles.apresentacao__links__navegacao} href="https://www.linkedin.com/in/rafaeljsouza/">
                     <img src="https://img.icons8.com/external-tal-revivo-green-tal-revivo/36/null/external-linkedin-in-logo-used-for-professional-networking-logo-green-tal-revivo.png" alt="logo do Linkedin" />
                     Linkedin

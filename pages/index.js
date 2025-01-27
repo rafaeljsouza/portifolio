@@ -1,17 +1,9 @@
-import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
 export default function Home() {
   const router = useRouter()
-
-  useEffect(() => {
-    fetch('/api/redirect')
-      .then(response => {
-        if (response.redirected) {
-          window.location.href = response.url
-        }
-      })
-  }, [])
-
+  if (typeof window !== 'undefined') {
+    router.push('/pt')
+  }
   return null
 }

@@ -26,11 +26,12 @@
  }
  
  .cabecalho {
-   padding: 1% 0% 0% 15%;
- }
+   padding: 1% 15% 0% 15%; 
+}
  
  .cabecalho__menu {
     display: flex;
+    align-items: center;
     gap: 5rem;
  }
  
@@ -41,6 +42,21 @@
     color: var(--tercearia);
     text-decoration: none;
  }
+
+ .cabecalho__menu__lang {
+   font-family: "Montserrat", sans-serif;
+   font-size: 1.2rem;
+   font-weight: 600;
+   color: var(--tercearia);
+   text-decoration: none;
+   padding: 0.5rem 1rem;
+   border: 1px solid var(--tercearia);
+   border-radius: 0.5rem;
+}
+
+.cabecalho__menu__lang:hover {
+   background-color: var(--hover);
+}
  
  .apresentacao {
     gap: 40px;

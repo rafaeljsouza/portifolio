@@ -3,7 +3,12 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../../styles/Home.module.css'
+import { useRouter } from 'next/router'
+
+
 export default function Home() {
+    const router = useRouter()
+    const currentPath = router.asPath
   return (
     <div className={`${styles.theme}`}>
         <div  className={`${styles.container}`}>
@@ -16,9 +21,15 @@ export default function Home() {
 
             <header className={styles.cabecalho}>
                 <nav className={styles.cabecalho__menu}>
-                <Link href="/en" className={styles.cabecalho__menu__link}>Home</Link>
-                <Link href="/en/about" className={styles.cabecalho__menu__link}>About me</Link>
-                <Link href="/en/projects" className={styles.cabecalho__menu__link}>Projects</Link>
+                    <Link href="/en" className={styles.cabecalho__menu__link}>Home</Link>
+                    <Link href="/en/about" className={styles.cabecalho__menu__link}>About me</Link>
+                    <Link href="/en/projects" className={styles.cabecalho__menu__link}>Projects</Link>
+                    <Link 
+                    href={currentPath.replace('/en/', '/pt/')} 
+                    className={styles.cabecalho__menu__lang}
+                    >
+                    🌐 PT
+                    </Link>
                 </nav>
             </header>
 

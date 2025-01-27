@@ -4,7 +4,13 @@ import Link from 'next/link'
 import { useEffect } from 'react'
 import styles from '../../styles/Home.module.css'
 
+import { useRouter } from 'next/router'
+
+
+
 export default function About() {
+  const router = useRouter()
+  const currentPath = router.asPath
  useEffect(() => {
    const dataNascimento = new Date('1989-05-08')
    const dataMudancaCuritiba = new Date('2007-02-28')
@@ -41,6 +47,12 @@ export default function About() {
            <Link href="/pt" className={styles.cabecalho__menu__link}>Home</Link>
            <Link href="/pt/about" className={styles.cabecalho__menu__link}>Sobre mim</Link>
            <Link href="/pt/projects" className={styles.cabecalho__menu__link}>Projetos</Link>
+           <Link 
+                    href={currentPath.replace('/pt/', '/en/')} 
+                    className={styles.cabecalho__menu__lang}
+                    >
+                    🌐 EN
+                </Link>
          </nav>
        </header>
 

@@ -3,7 +3,16 @@ const nextConfig = {
   reactStrictMode: true,
   i18n: {
     locales: ['pt', 'en'],
-    defaultLocale: 'en'  // Mantendo inglês como padrão para visitantes internacionais
+    defaultLocale: 'en',
+  },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/en',
+        permanent: false,
+      }
+    ]
   }
 }
 

@@ -9,6 +9,7 @@ export default function Layout({ children, pageTitle }) {
   const router = useRouter()
   const { locale } = router
   const t = translations[locale]
+  const currentPath = router.pathname === '/' ? '' : router.pathname
 
   return (
     <div className={`${styles.theme}`}>

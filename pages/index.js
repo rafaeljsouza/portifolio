@@ -11,8 +11,8 @@ export default function Home() {
   return null
 }
 
-// Adicione isso para garantir redirecionamento mesmo sem JavaScript
-export async function getStaticProps() {
+// Usando getServerSideProps em vez de getStaticProps
+export async function getServerSideProps() {
   return {
     redirect: {
       destination: '/pt',

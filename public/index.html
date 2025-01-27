@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionando...</title>
+    <!-- O meta refresh faz o redirecionamento automático -->
+    <meta http-equiv="refresh" content="0; url=/pt" />
+    <style>
+        /* Um pouco de estilo para a mensagem de redirecionamento */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #1A120B;
+            color: #E5E5CB;
+        }
+    </style>
+</head>
+<body>
+    <p>Redirecionando para o portfólio...</p>
+    <!-- Fallback para caso o meta refresh não funcione -->
+    <script>
+        window.location.href = '/pt';
+    </script>
+</body>
+</html>

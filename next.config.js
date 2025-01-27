@@ -3,17 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   i18n: {
     locales: ['pt', 'en'],
-    defaultLocale: 'en',
+    defaultLocale: 'en'
   },
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/en',
-        permanent: false,
-      }
-    ]
-  }
+  // Removendo redirects daqui pois vamos gerenciar no nível da aplicação
 }
 
 module.exports = nextConfig

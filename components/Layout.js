@@ -9,7 +9,7 @@ export default function Layout({ children, pageTitle }) {
   const router = useRouter()
   const { locale } = router
   const t = translations[locale]
-  const currentPath = router.pathname === '/' ? '' : router.pathname
+  const currentPath = router.pathname === '/' ? '/home' : router.pathname
 
   return (
     <div className={`${styles.theme}`}>
@@ -27,7 +27,7 @@ export default function Layout({ children, pageTitle }) {
             <Link href="/about" locale={locale} className={styles.cabecalho__menu__link}>{t.menuAbout}</Link>
             <Link href="/projects" locale={locale} className={styles.cabecalho__menu__link}>{t.menuProjects}</Link>
             <Link 
-              href={router.pathname} 
+              href={currentPath} 
               locale={locale === 'pt' ? 'en' : 'pt'} 
               className={styles.cabecalho__menu__lang}
             >

@@ -22,7 +22,7 @@ export default function Layout({ children, pageTitle }) {
 
         <header className={styles.cabecalho}>
           <nav className={styles.cabecalho__menu}>
-            <Link href="/" locale={locale} className={styles.cabecalho__menu__link}>{t.menuHome}</Link>
+            <Link href="/home" locale={locale} className={styles.cabecalho__menu__link}>{t.menuHome}</Link>
             <Link href="/about" locale={locale} className={styles.cabecalho__menu__link}>{t.menuAbout}</Link>
             <Link href="/projects" locale={locale} className={styles.cabecalho__menu__link}>{t.menuProjects}</Link>
             <Link 

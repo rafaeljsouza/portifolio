@@ -1,3 +1,4 @@
 /Imagem.png
-node_modules/
-.next/
+node_modules
+.next
+.vercel

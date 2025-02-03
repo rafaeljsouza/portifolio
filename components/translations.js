@@ -14,7 +14,7 @@ export const translations = {
       bio: "Me chamo Rafael, tenho <span id='idade'></span> anos e moro há <span id='tempoCuritiba'></span> anos em Curitiba-PR. Sou programador com experiência de <span id='tempoProgramando'></span> anos em front-end, dados e back-end e nas linguagem de programação Python, Javascript e C; também os frameworks React e Vue.",
       bio2: "Sou curioso, leio muito e costumo buscar aprender e me aprofundar em diversos assuntos, acompanhando tendências e testando novas tecnologias. No momento cursando Análise e Desenvolvimento de Sistemas na PUC-PR. Tenho facilidade de aprendizagem e de transformar ideias em resoluções práticas, seja na programação, organização ou didática.",
       bio3: "Também tenho facilidade com idiomas, sou fluente em inglês, instrumental e avançado em Espanhol. Infelizmente, meu grego antigo segue rudimentar.",
-      projectsDescription: "Esse portfólio está em construção e em breve você encontrará novos projetos aqui."
+      projectsDescription: "Este portfólio é um dos projetos. Você pode acessar o repositório dele clicando na imagem a seguir"
     },
     en: {
       title: "Portfolio",

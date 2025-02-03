@@ -15,6 +15,9 @@ export default function Projects() {
           <h1 className={styles.apresentacao__conteudo__titulo}>{t.menuProjects}</h1>
           <p className={styles.apresentacao__conteudo__texto}>
             {t.projectsDescription}
+            <a href='https://github.com/rafaeljsouza/portifolio'>
+              <img src='' ></img>
+            </a>
           </p>
         </section>
         <img 
